@@ -665,6 +665,7 @@ keyEvent映射表: https://docs.openharmony.cn/pages/v4.1/en/application-dev/ref
 });
 
 async function main() {
+  console.error('hdc-mcp server started');
   const transport = new StdioServerTransport();
   await server.connect(transport);
 }
