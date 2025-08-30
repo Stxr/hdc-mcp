@@ -1,0 +1,35 @@
+# 源代码文件
+src/
+*.ts
+tsconfig.json
+
+# 开发配置文件
+.claude/
+.claude/
+.git/
+.gitignore
+
+# 调试和开发文件
+debug.sh
+install.sh
+CLAUDE.md
+DEBUG.md
+awesome-hdc-readme.md
+claude_desktop_config.json
+
+# 包管理文件
+pnpm-lock.yaml
+
+# IDE和编辑器
+.vscode/
+.idea/
+*.log
+
+# 测试文件
+**/*.test.js
+**/*.spec.js
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
