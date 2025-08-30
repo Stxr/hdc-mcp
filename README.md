@@ -21,7 +21,14 @@
 
 ### 使用mcp
 ```bash
-npx -y hdc-mcp
+{
+  "mcpServers": {
+    "hdc": {
+      "command": "npx",
+      "args": ["-y","hdc-mcp"],
+    }
+  }
+}
 ```
 # 感谢
 - [awesome-hdc](https://github.com/codematrixer/awesome-hdc/blob/master/README.md)
