@@ -8,18 +8,18 @@
 
 ### 改进的工具描述
 - `hdc_get_version`: 添加 `hdc -v` 命令示例
-- `hdc_get_device_info`: 添加 `hdc -t <deviceId> shell param get <参数>` 命令示例
-- `hdc_install_app`: 添加 `hdc -t <deviceId> install <appPath>` 命令示例
-- `hdc_uninstall_app`: 添加 `hdc -t <deviceId> uninstall <bundleName>` 命令示例
-- `hdc_list_apps`: 添加 `hdc -t <deviceId> shell bm dump -a` 命令示例
-- `hdc_start_app`: 添加 `hdc -t <deviceId> shell aa start -b <bundleName> -a <abilityName>` 命令示例
-- `hdc_stop_app`: 添加 `hdc -t <deviceId> shell aa force-stop <bundleName>` 命令示例
-- `hdc_clear_app_data`: 添加 `hdc -t <deviceId> shell bm clean -n <bundleName> -c data` 命令示例
-- `hdc_push_file`: 添加 `hdc -t <deviceId> file send <localPath> <remotePath>` 命令示例
-- `hdc_pull_file`: 添加 `hdc -t <deviceId> file recv <remotePath> <localPath>` 命令示例
-- `hdc_take_screenshot`: 添加 `hdc -t <deviceId> snapshot-display <savePath>` 命令示例
-- `hdc_reboot_device`: 添加 `hdc -t <deviceId> target boot` 命令示例
-- `hdc_get_logs`: 添加 `hdc -t <deviceId> shell hilog` 命令示例
+- `hdc_get_device_info`: 添加 `hdc [-t <deviceId>] shell param get <参数>` 命令示例
+- `hdc_install_app`: 添加 `hdc [-t <deviceId>] install <appPath>` 命令示例
+- `hdc_uninstall_app`: 添加 `hdc [-t <deviceId>] uninstall <bundleName>` 命令示例
+- `hdc_list_apps`: 添加 `hdc [-t <deviceId>] shell bm dump -a` 命令示例
+- `hdc_start_app`: 添加 `hdc [-t <deviceId>] shell aa start -b <bundleName> -a <abilityName>` 命令示例
+- `hdc_stop_app`: 添加 `hdc [-t <deviceId>] shell aa force-stop <bundleName>` 命令示例
+- `hdc_clear_app_data`: 添加 `hdc [-t <deviceId>] shell bm clean -n <bundleName> -c data` 命令示例
+- `hdc_push_file`: 添加 `hdc [-t <deviceId>] file send <localPath> <remotePath>` 命令示例
+- `hdc_pull_file`: 添加 `hdc [-t <deviceId>] file recv <remotePath> <localPath>` 命令示例
+- `hdc_take_screenshot`: 修正为 `hdc [-t <deviceId>] shell snapshot_display -f <savePath>` 命令示例
+- `hdc_reboot_device`: 添加 `hdc [-t <deviceId>] target boot` 命令示例
+- `hdc_get_logs`: 添加 `hdc [-t <deviceId>] shell hilog` 命令示例
 
 ## [0.0.2] - 2025-8-31
 

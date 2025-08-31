@@ -40,7 +40,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_list_devices',
-        description: '列出所有连接的鸿蒙设备,命令: hdc list targets',
+        description: '列出所有连接的鸿蒙设备，命令: hdc list targets',
         inputSchema: {
           type: 'object',
           properties: {},
@@ -48,7 +48,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_get_device_info',
-        description: '获取指定设备的详细信息，命令: hdc -t <deviceId> shell param get <参数>',
+        description: '获取指定设备的详细信息，命令: hdc [-t <deviceId>] shell param get <参数>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -62,7 +62,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_install_app',
-        description: '在设备上安装应用，命令: hdc -t <deviceId> install <appPath>',
+        description: '在设备上安装应用，命令: hdc [-t <deviceId>] install <appPath>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -80,7 +80,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_uninstall_app',
-        description: '从设备上卸载应用，命令: hdc -t <deviceId> uninstall <bundleName>',
+        description: '从设备上卸载应用，命令: hdc [-t <deviceId>] uninstall <bundleName>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -98,7 +98,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_list_apps',
-        description: '列出设备上已安装的应用，命令: hdc -t <deviceId> shell bm dump -a',
+        description: '列出设备上已安装的应用，命令: hdc [-t <deviceId>] shell bm dump -a',
         inputSchema: {
           type: 'object',
           properties: {
@@ -112,7 +112,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_start_app',
-        description: '启动指定应用，命令: hdc -t <deviceId> shell aa start -b <bundleName> -a <abilityName>',
+        description: '启动指定应用，命令: hdc [-t <deviceId>] shell aa start -b <bundleName> -a <abilityName>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -134,7 +134,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_stop_app',
-        description: '停止指定应用，命令: hdc -t <deviceId> shell aa force-stop <bundleName>',
+        description: '停止指定应用，命令: hdc [-t <deviceId>] shell aa force-stop <bundleName>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -152,7 +152,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_clear_app_data',
-        description: '清除应用数据，命令: hdc -t <deviceId> shell bm clean -n <bundleName> -c data',
+        description: '清除应用数据，命令: hdc [-t <deviceId>] shell bm clean -n <bundleName> -c data',
         inputSchema: {
           type: 'object',
           properties: {
@@ -170,7 +170,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_push_file',
-        description: '将文件推送到设备，命令: hdc -t <deviceId> file send <localPath> <remotePath>',
+        description: '将文件推送到设备，命令: hdc [-t <deviceId>] file send <localPath> <remotePath>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -192,7 +192,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_pull_file',
-        description: '从设备拉取文件，命令: hdc -t <deviceId> file recv <remotePath> <localPath>',
+        description: '从设备拉取文件，命令: hdc [-t <deviceId>] file recv <remotePath> <localPath>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -214,7 +214,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_take_screenshot',
-        description: '截取设备屏幕截图，命令: hdc -t <deviceId> snapshot-display <savePath>',
+        description: '截取设备屏幕截图，命令: hdc [-t <deviceId>] shell snapshot_display -f <savePath>',
         inputSchema: {
           type: 'object',
           properties: {
@@ -232,7 +232,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_reboot_device',
-        description: '重启设备，命令: hdc -t <deviceId> target boot',
+        description: '重启设备，命令: hdc [-t <deviceId>] target boot',
         inputSchema: {
           type: 'object',
           properties: {
@@ -246,7 +246,7 @@ server.setRequestHandler(ListToolsRequestSchema, async (request) => {
       },
       {
         name: 'hdc_get_logs',
-        description: '获取设备日志，命令: hdc -t <deviceId> shell hilog',
+        description: '获取设备日志，命令: hdc [-t <deviceId>] shell hilog',
         inputSchema: {
           type: 'object',
           properties: {
